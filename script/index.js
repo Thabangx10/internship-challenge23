@@ -35,33 +35,54 @@
 //     }
 // });
 
+// $(document).ready(function () {
+//     const carousel = $(".carousel");
+//     const slides = $(".slide");
+//     let currentSlide = 0;
+  
+//     $(".next").click(function () {
+//       if (currentSlide < slides.length - 1) {
+//         currentSlide++;
+//       } else {
+//         currentSlide = 0;
+//       }
+//       updateCarousel();
+//     });
+  
+//     $(".prev").click(function () {
+//       if (currentSlide > 0) {
+//         currentSlide--;
+//       } else {
+//         currentSlide = slides.length - 1;
+//       }
+//       updateCarousel();
+//     });
+  
+//     function updateCarousel() {
+//       const slideWidth = slides.eq(0).width();
+//       const newPosition = -currentSlide * slideWidth;
+//       carousel.css("transform", `translateX(${newPosition}px)`);
+//     }
+//   });
+
 $(document).ready(function () {
-    const carousel = $(".carousel");
-    const slides = $(".slide");
-    let currentSlide = 0;
-  
-    $(".next").click(function () {
-      if (currentSlide < slides.length - 1) {
-        currentSlide++;
-      } else {
-        currentSlide = 0;
-      }
+  const carousel = $(".carousel");
+  const slides = $(".slide");
+  let currentSlide = 0;
+
+  $(".next").click(function () {
+      currentSlide = (currentSlide + 1) % slides.length;
       updateCarousel();
-    });
-  
-    $(".prev").click(function () {
-      if (currentSlide > 0) {
-        currentSlide--;
-      } else {
-        currentSlide = slides.length - 1;
-      }
+  });
+
+  $(".prev").click(function () {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
       updateCarousel();
-    });
-  
-    function updateCarousel() {
+  });
+
+  function updateCarousel() {
       const slideWidth = slides.eq(0).width();
       const newPosition = -currentSlide * slideWidth;
       carousel.css("transform", `translateX(${newPosition}px)`);
-    }
-  });
-  
+  }
+});
