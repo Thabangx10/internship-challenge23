@@ -90,6 +90,18 @@
     font-family: 'Arial', sans-serif;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Add styles for the logo image */
+.logo img {
+  width: auto; /* Make sure the logo is responsive */
+  height: 40px; /* Adjust the height based on your design */
+  margin-right: 10px; /* Add some spacing if needed */
+}
+
 nav {
     background: #333;
     color: white;
@@ -168,7 +180,8 @@ img {
   padding: 20px;
   box-sizing: border-box;
   width: 100%; 
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  margin-right: 20px;
   font-size: 14px;
 }
 
@@ -185,26 +198,24 @@ img {
   height: 40px;
 }
 
-.square {
-  background-color: #e74c3c; /* Red */
+.professional-shapes-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 40px; /* Adjust the height based on your design */
 }
 
-.circle {
-  background-color: #2ecc71; /* Green */
-  border-radius: 50%;
+/* Add styles for the SVG */
+.section-shapes-container img {
+  width: auto; /* Make sure the SVG is responsive */
+  height: 100%;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 43.3px solid #3498db; /* Blue */
-}
 
 .three-columns-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 50px auto;
   width: 80%;
 }
@@ -215,6 +226,9 @@ img {
   background-color: #ecf0f1;
   border: 1px solid #bdc3c7;
   border-radius: 5px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .card h3 {
@@ -226,7 +240,24 @@ img {
   text-align: justify;
 }
 
-@media (min-width: 305px) {
+.notes-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.note {
+  flex-basis: calc(30% - 20px);
+  background-color: #f5f5f5; /* Adjust color as needed */
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+@media (max-width: 425px) {
   .main-content {
     width: 80%; 
   }
@@ -245,7 +276,7 @@ img {
 
 .three-columns-container {
   width: 80%;
-  justify-content: flex-start;
+  flex-wrap : wrap;
 }
 
 .card {
