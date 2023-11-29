@@ -269,7 +269,7 @@ img {
   border-radius: 3px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 305px) {
   .main-content {
     width: 80%; 
   }
@@ -289,6 +289,10 @@ img {
 
 .black-stripe{
   top: 36%;
+}
+
+.notes-container {
+  flex-direction: column;
 }
 
 .three-columns-container {
@@ -316,4 +320,82 @@ img {
   flex-basis: 100%;
   margin-right: 0;
 }
+}
+
+@media (min-width: 375px) {
+  .main-content {
+    width: 80%; 
+  }
+
+  .left-handed-about-container,
+  .professional-shapes-container {
+    width: 58%;
+  }
+
+  .description-container2 {
+    font-size: 10px;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    top: 34%;
+}
+
+.black-stripe{
+  top: 32%;
+}
+
+.three-columns-container {
+  width: 80%;
+  flex-wrap : wrap;
+}
+
+.card {
+  flex-basis: calc(100% - 20px);
+  margin-bottom: 20px;
+}
+
+.notes-container {
+  flex-direction: column;
+}
+
+.note {
+  flex-basis: 100%;
+  margin-right: 0;
+}
+}
+
+@media (min-width: 425px) {
+
+  .notes-container {
+    flex-direction: column;
+
+  }
+
+  .note {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 426px) {
+  
+  .three-columns-container {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: calc(33.3333% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .notes-container {
+    flex-direction: column;
+  }
+
+  .note {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
 }
