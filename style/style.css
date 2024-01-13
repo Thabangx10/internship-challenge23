@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 
-.activeSVG {
+.active {
     transform: rotate(-30deg);
     margin-right: 8px;
 }
