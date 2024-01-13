@@ -1,34 +1,35 @@
-$(document).ready(function(){
-    $('.next').on('click', function(){
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
+$(document).ready(function () {
+    var interval = setInterval(nextImage, 5000); 
 
-    if(nextImg.length){
-        currentImg.removeClass().css('z-index', -10);
-        nextImg.addClass('active').css('z-index', 10);
+    function nextImage() {
+        var activeImage = $('.carousal .inner .active');
+        var nextImage = activeImage.next('img');
+
+        if (nextImage.length === 0) {
+            nextImage = $('.carousal .inner img:first');
+        }
+
+        activeImage.removeClass('active');
+        nextImage.addClass('active');
+
+        updatePoints();
     }
 
-    });
+    function updatePoints() {
+        var activePoint = $('.carousal .points .activeSVG');
+        var nextPoint = activePoint.next('svg');
 
-    $('.prev').on('click', function(){
-        var currentImg = $('.active');
-        var prevImg = currentImg.prev();
-    
-        if(prevImg.length){
-            currentImg.removeClass().css('z-index', -10);
-            prevImg.addClass('active').css('z-index', 10);
+        if (nextPoint.length === 0) {
+            nextPoint = $('.carousal .points svg:first');
         }
-    
-        });
 
-        $('.next').on('click', function(){
-            var currentSVG = $('.activeSVG');
-            var nextSVG = currentSVG.next();
-        
-            if(nextSVG.length){
-                currentSVG.removeClass();
-                nextSVG.addClass('activeSVG');
-            }
-        
-            });
+        activePoint.removeClass('activeSVG');
+        nextPoint.addClass('activeSVG');
+    }
+
+    $('.carousal .next').click(function () {
+        clearInterval(interval);
+        nextImage();
+        interval = setInterval(nextImage, 5000); // Reset the interval
+    });
 });

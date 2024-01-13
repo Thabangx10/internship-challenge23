@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -49,14 +49,20 @@ a {
 .banner {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100px;
     background-color: #234AC1;
     width: 45%;
-    margin-inline-start: 30px;
+    margin-inline-start: 0px;
     position: absolute;
     top: 40%;
-
+    text-align: center;
 }
+
+.banner h1 {
+    color: white; /* Set the text color to white */
+}
+
 
 .block {
     height: 100px;
@@ -262,7 +268,7 @@ h3 {
 @media screen and (max-width: 850px){
     .banner h1 {
         font-size: 18px;
-        margin-inline-start: 60px;
+        margin-inline-start: 0px;
     }
 }
 
