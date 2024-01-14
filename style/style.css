@@ -1,6 +1,9 @@
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 300;
 }
 
 a {
@@ -80,8 +83,6 @@ a {
     height: 100px;
     background-color: black;
     width: 45%;
-    margin-inline-start: auto;
-    margin-inline-end: 30px;
     position: absolute;
     z-index: -5;
     top: 40%;
