@@ -90,6 +90,18 @@ $(document).ready(function () {
                 break;
         }
 
-        bannerSection.querySelector('h1').textContent = text;
+        var h1Element = bannerSection.querySelector('h1');
+
+        // Add a class to trigger the transition effect
+        h1Element.classList.add('slide-from-left');
+    
+        // Set the text content after a short delay to allow the transition to take effect
+        setTimeout(function () {
+            h1Element.textContent = text;
+            // Remove the class after the transition ends to reset for the next update
+            h1Element.addEventListener('transitionend', function () {
+                h1Element.classList.remove('slide-from-left');
+            }, { once: true });
+        }, 100);
     }
 });
