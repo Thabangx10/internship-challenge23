@@ -66,6 +66,14 @@ $(document).ready(function () {
 
         activePoint.removeClass('activeSVG');
         nextPoint.addClass('activeSVG');
+
+                // Add a class to trigger the transition effect for the active point
+                nextPoint.addClass('activePointAnimation');
+
+                // Remove the class after the transition ends to reset for the next update
+                nextPoint.on('transitionend', function () {
+                    nextPoint.removeClass('activePointAnimation');
+                });
     }
 
     $('.carousal .next').click(function () {

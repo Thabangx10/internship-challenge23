@@ -43,11 +43,19 @@ a {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    color: white;
     position: absolute;
     right: 12%;
     top: 85%;
 }
+
+.points .activeSVG.activePointAnimation {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-out;
+    opacity: 0.39;
+    transform: rotate(360deg);
+    filter: grayscale(100%);
+}
+
 
 .banner {
     display: flex;
@@ -115,12 +123,12 @@ a {
 .prev,
 .next {
     cursor: pointer;
-    transition: transform 0.3s ease-out; /* Add transition for smooth effect */
+    transition: transform 0.3s ease-out;
 }
 
 .prev:hover,
 .next:hover {
-    transform: translateX(35px); /* Move to the right by 5 pixels on hover, adjust as needed */
+    transform: translateX(35px);
 }
 
 .prev {
