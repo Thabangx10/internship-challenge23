@@ -4,6 +4,7 @@
     font-size: 20px;
     line-height: 36px;
     font-weight: 300;
+    transition: 0.1s;
 }
 
 a {
@@ -114,6 +115,12 @@ a {
 .prev,
 .next {
     cursor: pointer;
+    transition: transform 0.3s ease-out; /* Add transition for smooth effect */
+}
+
+.prev:hover,
+.next:hover {
+    transform: translateX(35px); /* Move to the right by 5 pixels on hover, adjust as needed */
 }
 
 .prev {
@@ -123,6 +130,7 @@ a {
 .next {
     z-index: 100;
 }
+
 
 .landing {
     width: 78%;
