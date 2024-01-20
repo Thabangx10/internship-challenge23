@@ -1,10 +1,16 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
     line-height: 36px;
     font-weight: 300;
     transition: 0.1s;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 a {
@@ -94,8 +100,7 @@ a {
     position: absolute;
     z-index: -5;
     top: 40%;
-    right: -0;
-
+    right: -29px;
 }
 
 .hero-text h1 {
@@ -227,7 +232,7 @@ h3 {
 }
 
 .text {
-    margin: 0;
+    margin: inherit;
     font-size: 9.6px;
 }
 
@@ -241,10 +246,6 @@ h3 {
 }
 
 @media screen and (max-width: 400px) {
-    
-    .block {
-        display: none;
-    }
 
     .banner2-text {
         justify-content: start;
@@ -275,10 +276,11 @@ h3 {
         padding-top: 0;
     }
     .image-section{
-        width: fit-content;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        flex-wrap: nowrap;
+        display: flex;
+        justify-content: center;
     }
     .controls{
         bottom: 30%;
@@ -286,9 +288,7 @@ h3 {
 }
 
 @media screen and (max-width: 450px){
-    .image-section{
-        display: none;
-    }
+
     .controls{
         right: -18%;
     }
@@ -301,7 +301,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 320px){
     h3{
         margin-left: 70px;
     }
@@ -310,7 +310,7 @@ h3 {
     }
 
     .text {
-        margin-left: 50px;
+        margin-left: 14%;
     }
     .banner h1 {
         font-size: 18px;
@@ -335,12 +335,11 @@ h3 {
 @media screen and (max-width: 250px){
     .banner2-text {
         font-size: 13px;
-        width: 100vw;
+        width: 100%; /* Adjust or remove as needed */
     }
 
     .inner img.active {
-        width: 100vw;
-        height: 30vh;
+        width: 100%;
+        height: auto; /* Adjust or remove as needed */
     }
-    
 }
