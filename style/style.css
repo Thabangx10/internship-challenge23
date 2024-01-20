@@ -27,7 +27,7 @@ a {
 
 .controls {
     position: absolute;
-    bottom: 34%;
+    bottom: 30%;
     right: 5%;
     display: flex;
     justify-content: space-between;
