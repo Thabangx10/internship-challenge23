@@ -15,8 +15,8 @@ a {
 }
 
 .activeSVG {
-    transform: rotate(-30deg);
-    margin-right: 8px;
+    transform: rotate(120deg);
+    opacity: 50%;
 }
 
 .container-fluid {
@@ -51,10 +51,8 @@ a {
 }
 
 .points .activeSVG.activePointAnimation {
-    transform: scale(0.5) rotate(45deg);
-    transition: transform 0.3s ease-in, opacity 0.3s ease-in-out;
-    opacity: 0.39;
-    filter: grayscale(100%);
+    transform: rotate(120deg);
+    opacity: 50%;
 }
 
 
