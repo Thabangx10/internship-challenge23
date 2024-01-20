@@ -15,8 +15,9 @@ a {
 }
 
 .activeSVG {
-    transform: rotate(120deg);
-    opacity: 50%;
+    transform: rotate(0deg);
+    margin-right: 8px;
+    transition: transform 0.5s ease;
 }
 
 .container-fluid {
@@ -51,8 +52,20 @@ a {
 }
 
 .points .activeSVG.activePointAnimation {
-    transform: rotate(120deg);
-    opacity: 50%;
+    animation: spin 2s linear infinite; /* Added a spin animation */
+    opacity: 0.39;
+    filter: grayscale(100%);
+    transform-origin: center;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -154,7 +167,7 @@ a {
 }
 
 svg {
-    padding-top: 3vh;
+    padding-top: 0;
     margin: auto 0 auto 0;
 }
 
@@ -299,7 +312,7 @@ h3 {
         font-size: 18px;
         margin-inline-start: 0px;
     }
-}
+
 
 @media screen and (max-width: 320px){
 
