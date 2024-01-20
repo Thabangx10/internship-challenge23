@@ -302,6 +302,10 @@ h3 {
 }
 
 @media screen and (max-width: 320px){
+
+    .landing{
+        width: 88%;
+    }
     h3{
         margin-left: 70px;
     }
