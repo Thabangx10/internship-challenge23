@@ -123,7 +123,7 @@ a {
     width: 80%;
     height: 550px;
 }
-
+/**
 .prev,
 .next {
     cursor: pointer;
@@ -134,6 +134,7 @@ a {
 .next:hover {
     transform: translateX(35px);
 }
+**/
 
 .prev {
     z-index: 100;
@@ -177,7 +178,7 @@ svg {
 }
 
 .banner2-hero {
-    padding: 0 28px 0 28px;
+    padding: 30px 28px 30px 28px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
@@ -219,9 +220,8 @@ svg {
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 21px;
+    gap: 10px;
     justify-content: center;
-
 }
 
 h3 {
@@ -313,12 +313,17 @@ h3 {
         margin-left: 14%;
     }
     .banner h1 {
-        font-size: 18px;
+        font-size: 14px;
         margin-inline-start: 20px;
+        margin-inline-end: 20px;
+        display: flex;
+        justify-content: center;
     }
+
+    
     .controls{
         bottom: 25%;
-        right: -28%;
+        right: -26%;
     }
 }
 
@@ -329,6 +334,7 @@ h3 {
     }
     .controls{
         bottom: 22%;
+        /* right: -16%; */
     }
 }
 
