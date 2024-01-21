@@ -318,6 +318,7 @@ h3 {
     .landing{
         width: 88%;
     }
+
     h3{
         margin-left: 33px;
     }
@@ -330,7 +331,7 @@ h3 {
         display: contents;
     }
     .banner h1 {
-        font-size: 14px;
+        font-size: 6px;
         margin-inline-start: 20px;
         margin-inline-end: 20px;
         display: flex;
