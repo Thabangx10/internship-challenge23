@@ -193,7 +193,7 @@ svg {
 .square {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 10px;
 }
 
 .square-sponsor {
