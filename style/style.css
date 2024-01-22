@@ -257,8 +257,8 @@ h3 {
 @media screen and (max-width: 1024px) {
     
     .banner2-hero{
-        padding-top: 0;
-    }
+        padding: 30px 70px 90px 80px !important;
+}
 }
 
 @media screen and (max-width: 400px) {
