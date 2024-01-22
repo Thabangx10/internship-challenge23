@@ -254,9 +254,7 @@ h3 {
 @media screen and (max-width: 1024px) {
     
     .banner2-hero{
-        flex-direction: row;
-        display: flex;
-        padding: 50px 80px 50px 80px;
+        padding-top: 0;
     }
 }
 
@@ -321,9 +319,6 @@ h3 {
         margin-inline-start: 0px;
     }
 
-    .check{
-        padding: 50px 50px 50px 50px;
-    }
 }
 
 @media screen and (max-width: 320px){
