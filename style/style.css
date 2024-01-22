@@ -1,11 +1,11 @@
 
 * {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+
     line-height: 36px;
     font-weight: 500;
     transition: 0.1s;
-    padding: 0%;
+
     margin: 0;
 }
 
@@ -257,7 +257,7 @@ h3 {
 @media screen and (max-width: 1024px) {
     
     .banner2-hero{
-        padding: 30px 70px 90px 80px !important;
+        padding: 30px 70px 100px 80px !important;
 }
 }
 
