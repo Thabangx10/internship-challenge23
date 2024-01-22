@@ -344,11 +344,16 @@ h3 {
         right: -26%;
     }
 
-    .container1,
+    
     .square-sponsor {
         max-width: 300px;
         display: flex;
         gap: 39px;
+    }
+
+    .container1{
+        max-width: 300px;
+        display: flex;
     }
 }
 
