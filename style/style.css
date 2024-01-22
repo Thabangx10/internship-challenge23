@@ -278,20 +278,18 @@ h3 {
 @media screen and (max-width: 800px) {
     .banner2-hero{
         flex-direction: column;
-
     }
     .banner2-text{
-        width: 50%;
-        margin-left: 50px;
-        height: 100%;
+        width: auto;
+        height: auto;
     }
     svg{
         padding-top: 0;
     }
     .image-section{
         width: 100%;
-        margin-left: -5px;
-        margin-right: 200px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         justify-content: center;
     }
