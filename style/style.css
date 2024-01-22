@@ -228,6 +228,9 @@ svg {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 50px;
 }
 
 h3 {
