@@ -288,6 +288,10 @@ h3 {
 @media screen and (max-width: 800px) {
     .banner2-hero{
         flex-direction: column;
+        /* gap: 90px; */
+        text-align: center;
+        padding: 30px 70px 10px 70px !important;
+        /* height: 100px; */
     }
     .banner2-text{
         width: auto;
