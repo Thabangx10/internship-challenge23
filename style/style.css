@@ -184,7 +184,7 @@ svg {
 }
 
 .banner2-hero {
-    padding: 30px 28px 30px 28px;
+    padding: 30px 38px 30px 58px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
@@ -251,6 +251,15 @@ h3 {
     margin-left: 33px;
 }
 
+@media screen and (max-width: 1024px) {
+    
+    .banner2-hero{
+        flex-direction: row;
+        display: flex;
+        padding: 50px 80px 50px 80px;
+    }
+}
+
 @media screen and (max-width: 400px) {
 
     .banner2-text {
@@ -310,6 +319,10 @@ h3 {
     .banner h1 {
         font-size: 18px;
         margin-inline-start: 0px;
+    }
+
+    .check{
+        padding: 50px 50px 50px 50px;
     }
 }
 
