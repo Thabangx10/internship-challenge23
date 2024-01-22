@@ -184,8 +184,8 @@ svg {
 }
 
 .banner2-hero {
-    padding: 30px 28px 30px 28px;
-    justify-content: space-evenly;
+    padding: 30px 38px 30px 48px;
+    justify-content: center;
     display: flex;
     flex-direction: row;
 }
