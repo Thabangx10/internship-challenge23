@@ -257,9 +257,9 @@ h3 {
 @media screen and (max-width: 1024px) {
     
     .banner2-hero{
-        padding: 30px 70px 0px 80px !important;
-        flex-wrap: wrap;
-        gap: 10px;
+        padding: 30px 70px 40px 80px !important;
+    flex-wrap: wrap;
+    gap: 150px;
 }
 }
 
