@@ -257,7 +257,9 @@ h3 {
 @media screen and (max-width: 1024px) {
     
     .banner2-hero{
-        padding: 30px 70px 100px 80px !important;
+        padding: 30px 70px 0px 80px !important;
+        flex-wrap: wrap;
+        gap: 10px;
 }
 }
 
@@ -288,8 +290,8 @@ h3 {
 @media screen and (max-width: 800px) {
     .banner2-hero{
         flex-direction: column;
-        gap: 20px;
-        text-align: center;
+        gap: 10px;
+        
         padding: 30px 70px 10px 70px !important;
         /* height: 100px; */
     }
