@@ -184,7 +184,7 @@ svg {
 }
 
 .banner2-hero {
-    padding: 30px 38px 30px 58px;
+    padding: 30px 38px 0px 58px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
@@ -230,7 +230,7 @@ svg {
     justify-content: center;
     padding-left: 130px;
     padding-right: 130px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 h3 {
