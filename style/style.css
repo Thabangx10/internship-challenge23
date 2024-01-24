@@ -259,7 +259,7 @@ h3 {
     .banner2-hero{
         padding: 30px 70px 40px 80px !important;
     flex-wrap: wrap;
-    gap: 150px;
+    gap: 130px;
 }
 }
 
@@ -292,7 +292,7 @@ h3 {
         flex-direction: column;
         gap: 10px;
         
-        padding: 30px 70px 10px 70px !important;
+        padding: 30px 80px 10px 80px !important;
         /* height: 100px; */
     }
     .banner2-text{
